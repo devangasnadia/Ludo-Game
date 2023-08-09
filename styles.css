@@ -1,0 +1,291 @@
+
+.body-logo {
+    font-family: 'Your Logo Font', 'Times New Roman';
+    font-size: 48px;
+    margin-bottom: 10px;
+    background-color: #f5ca53; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 305px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.body-logo{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+
+.newsletter{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+main {
+    margin-top: 20px; 
+    padding: 20px; 
+}
+
+
+/* Consistent styling for the main content */
+.body-logo {
+    margin-top: 20px; 
+    padding: 20px; 
+    transition: transform 0.3s; 
+}
+
+/* Style for the link-button */
+.button-link {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    background-color: #7d7cdd;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+.featured-media {
+    height: 400px; 
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.featured-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.zoomable-image {
+    width: auto;
+    height: 100%;
+    transform: scale(0.1);
+    transition: transform 0.5s ease;
+}
+
+
+.youtube-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 100px; 
+margin-bottom: 100px;
+}
+
+/* Consistent font for the site description */
+.site-description {
+    font-family: 'Your Heading Font', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reseting default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styling */
+body {
+    font-family: 'Your Body Font', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #b7cdf5;
+    background-image: url("bgimg.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+
+}
+
+.body {
+    background-color: white;
+}
+
+/* Consistent font for headings/titles */
+h1{
+    font-family: 'Your Heading Font', 'Times New Roman', Times, serif;
+    font-size: 75px;
+}
+h2, h3 {
+    font-family: 'Your Heading Font', 'Times New Roman', Times, serif;
+}
+
+/* Consistent background color for headers */
+header {
+    background-color: #ddb87f;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    background-image: url("bgimg.jpg");
+}
+
+.header-shadow {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.index-title {
+    font-size: 75px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+/* Consistent footer styling */
+footer {
+    background-color: #ecca6b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+    margin-top: auto; 
+}
+
+/* Consistent styling for navigation links */
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: transform 0.3s; 
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+/* info file*/
+
+.history{
+    background-image: url("snakes.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 90px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.8s ease, transform 1s ease;
+}
+
+/* review file*/
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.rate {
+    height: 46px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+/* Existing rate styling */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+.reviews {
+    background-image: url("snakes.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #412e2e; 
+    padding: 50px 0;
+    color: rgb(5, 1, 1); 
+}
+
+
+
+.reviews h2,
+.reviews label,
+.reviews p,
+.reviews textarea{
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #fcf9f9;
+}
+
+/* Background for the About section */
+.about {
+    background-color: #fffdc1a5; 
+    padding: 50px 0;
+    color: rgb(87, 22, 22); 
+    text-shadow: -1px  0 #000;
+}
+
